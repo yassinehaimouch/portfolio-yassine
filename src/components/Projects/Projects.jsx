@@ -23,14 +23,14 @@ const Projects = () => {
         />
         <Project
           img={magictrick}
-          title="The Beautiful Magic Trick With Playing Cards"
+          title="Beautiful Magic Trick With Playing Cards"
           github="https://github.com/yassinehaimouch"
           demo="https://magic-trick.vercel.app/"
-          desc="As Me Magician and developer i builded Beautiful dynamic Magic Trick With Playing Cards."
+          desc="As Me Magician and developer i builded Beautiful dynamic Magic Trick With (Face Up Face down) Playing Cards."
         />
         <Project
           img={camerashop}
-          title="CameraShop Project To Increase Decrease Products"
+          title="Shop To Increase Decrease Products"
           github="https://github.com/yassinehaimouch/CameraShop"
           demo="https://camera-shop-beige.vercel.app/"
           desc="You can ADD Product To Cart, increase decrease Products, Get Total Cost, Remove Product and Clear Shopping Cart."
