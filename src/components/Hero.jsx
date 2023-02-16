@@ -51,8 +51,9 @@ const Hero = () => {
         alt="Hero"
         className=" w-[500px]"
         initial={{ x: 0, opacity: 0 }}
-        whileInView={{ y: [-250, 0], opacity: 1 }}
+        whileInView={{ y: [250, 0], opacity: 1 }}
         transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
       />
     </div>
   );
