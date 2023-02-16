@@ -21,6 +21,7 @@ const About = () => {
           whileInView={{ x: [-100, 0], opacity: 1 }}
           transition={{ duration: 1 }}
           className=" w-[30%] h-[100%] rounded-xl max-xl:w-[100%]"
+          viewport={{ once: true }}
         />
         <motion.div
           className="w-[100%] flex flex-col gap-[2rem]"

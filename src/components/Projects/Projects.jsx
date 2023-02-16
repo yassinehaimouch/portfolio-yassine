@@ -23,6 +23,7 @@ const Projects = () => {
         initial={{ opacity: 0 }}
         whileInView={{ x: [-100, 0], opacity: 1 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true }}
         className=" grid grid-cols-1 gap-[5rem] md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 "
       >
         <Project
