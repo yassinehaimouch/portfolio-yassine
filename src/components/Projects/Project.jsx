@@ -8,7 +8,7 @@ const Project = (props) => {
       <a href={props.demo} rel="noreferrer" target="_blank">
         <img className="rounded-t-lg" src={props.img} alt="project" />
       </a>
-      <div class="p-5">
+      <div className="p-5">
         <a href={props.demo} rel="noreferrer" target="_blank">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
             {props.title}

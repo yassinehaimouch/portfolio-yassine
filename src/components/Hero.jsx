@@ -1,11 +1,16 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className=" flex justify-between items-center mx-[4rem] mt-[4rem] max-lg:mx-[1rem] max-lg:mt-[2rem] max-lg:gap-[4rem] max-lg:flex-col">
-      <div>
+      <motion.div
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ y: [-250, 0], opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
         <h1>Hi 👋, My name is</h1>
         <h3 className="text-[3rem] max-md:text-[1.9rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
           YASSINE HAIMOUCH
@@ -38,8 +43,16 @@ const Hero = () => {
             <AiFillLinkedin className=" w-[30px] h-[30px] cursor-pointer" />
           </a>
         </div>
-      </div>
-      <img src={hero} alt="Hero" className=" w-[500px]" />
+      </motion.div>
+
+      <motion.img
+        src={hero}
+        alt="Hero"
+        className=" w-[500px]"
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ y: [250, 0], opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      />
     </div>
   );
 };

@@ -15,6 +15,7 @@
   background: #351b57;
 }
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,4 +32,8 @@
 
 html {
   background-color: #0d1117;
+}
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
 }
