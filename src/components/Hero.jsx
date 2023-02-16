@@ -1,10 +1,8 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Hero = () => {
-  
   return (
     <div className=" flex justify-between items-center mx-[4rem] mt-[4rem] max-lg:mx-[1rem] max-lg:mt-[2rem] max-lg:gap-[4rem] max-lg:flex-col">
       <div>
@@ -41,7 +39,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <LazyLoadImage src={hero} alt="Hero" className=" w-[500px]" effect="blur"/>
+      <img src={hero} alt="Hero" className=" w-[500px]" />
     </div>
   );
 };

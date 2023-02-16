@@ -1,13 +1,12 @@
 import React from "react";
 import { AiFillGithub, AiFillEye } from "react-icons/ai";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const Project = (props) => {
   return (
     <div className="max-w-sm  border border-gray-200 rounded-lg shadow bg-[#101319] dark:border-gray-700">
       <a href={props.demo} rel="noreferrer" target="_blank">
-        <LazyLoadImage className="rounded-t-lg" src={props.img} alt="project" effect="blur"/>
+        <img className="rounded-t-lg" src={props.img} alt="project" />
       </a>
       <div class="p-5">
         <a href={props.demo} rel="noreferrer" target="_blank">
