@@ -1,5 +1,7 @@
 import React from "react";
 import aboutImage from "../assets/About.jpg";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 const About = () => {
   return (
@@ -8,10 +10,10 @@ const About = () => {
         About Me
       </h1>
       <div className=" flex gap-[10rem] max-xl:gap-[3rem] max-xl:flex-wrap justify-center">
-        <img
+        <LazyLoadImage
           src={aboutImage}
           alt="Me"
-          loading="lazy"
+          effect="blur"
           className=" w-[30%] h-[100%] rounded-xl max-xl:w-[100%]"
         />
         <div className=" w-[100%] flex flex-col gap-[2rem]">

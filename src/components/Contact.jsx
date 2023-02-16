@@ -1,6 +1,7 @@
 import React from "react";
 import ContactImg from "../assets/mem.png";
 import { AiFillMail } from "react-icons/ai";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       className=" mx-[4rem] max-lg:mx-[1rem] pt-[12rem] flex gap-[5rem] items-center justify-center"
       id="contact"
     >
-      <img src={ContactImg} alt="Memoji" className=" w-[30%] max-lg:hidden" loading="lazy"/>
+      <LazyLoadImage src={ContactImg} alt="Memoji" className=" w-[30%] max-lg:hidden" effect="blur"/>
       <div className=" w-[45%] max-lg:w-[100%]">
         <h1 className=" text-[2rem] font-bold mb-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
           Don't be a Stranger!

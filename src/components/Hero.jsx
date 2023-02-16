@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/hero.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Hero = () => {
   
@@ -40,7 +41,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <img src={hero} alt="Hero" className=" w-[500px]" loading="lazy" />
+      <LazyLoadImage src={hero} alt="Hero" className=" w-[500px]" effect="blur"/>
     </div>
   );
 };
