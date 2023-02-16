@@ -40,7 +40,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <img src={hero} alt="Hero" className=" w-[500px]" />
+      <img src={hero} alt="Hero" className=" w-[500px]" loading="lazy" />
     </div>
   );
 };

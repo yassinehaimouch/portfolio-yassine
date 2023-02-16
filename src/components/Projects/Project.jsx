@@ -5,7 +5,7 @@ const Project = (props) => {
   return (
     <div className="max-w-sm  border border-gray-200 rounded-lg shadow bg-[#101319] dark:border-gray-700">
       <a href={props.demo} rel="noreferrer" target="_blank">
-        <img className="rounded-t-lg" src={props.img} alt="" />
+        <img className="rounded-t-lg" src={props.img} alt="project" loading="lazy"/>
       </a>
       <div class="p-5">
         <a href={props.demo} rel="noreferrer" target="_blank">

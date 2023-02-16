@@ -10,7 +10,8 @@ const About = () => {
       <div className=" flex gap-[10rem] max-xl:gap-[3rem] max-xl:flex-wrap justify-center">
         <img
           src={aboutImage}
-          alt=""
+          alt="Me"
+          loading="lazy"
           className=" w-[30%] h-[100%] rounded-xl max-xl:w-[100%]"
         />
         <div className=" w-[100%] flex flex-col gap-[2rem]">
