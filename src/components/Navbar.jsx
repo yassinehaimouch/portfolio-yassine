@@ -4,13 +4,20 @@ import memoji from "../assets/image.png";
 import menu from "../assets/menu.png";
 import cross from "../assets/cross.png";
 import { FiDownload } from "react-icons/fi";
-import Resume from "../assets/resume.pdf";
+import Resume from "../assets/Yassine - Front-end Developer - Resume.pdf";
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   const clickHandler = () => {
     setIsClicked(!isClicked);
+  };
+
+  const clickdownload = () => {
+    const link = document.createElement("a");
+    link.href = Resume;
+    link.download = "Yassine - Front-end Developer - Resume";
+    link.click();
   };
 
   return (
@@ -29,13 +36,12 @@ const Navbar = () => {
         <a href="#contact">
           <li className=" cursor-pointer">Contact</li>
         </a>
-        <a
-          href={Resume}
+        <div
           className=" hover:bg-gradient-to-b bg-gradient-to-r from-[#7000fa] cursor-pointer flex items-center gap-[10px]  px-[15px] py-[8px] rounded-lg"
-          download="YASSINE-HAIMOUCH-resume"
+          onClick={clickdownload}
         >
           Resume <FiDownload />
-        </a>
+        </div>
       </ul>
       {!isClicked && (
         <img
@@ -65,14 +71,19 @@ const Navbar = () => {
           <a href="#contact" onClick={clickHandler}>
             <li className=" cursor-pointer">Contact</li>
           </a>
-          <a
-            href={Resume}
+          <div
             className=" cursor-pointer flex items-center gap-[10px]"
-            onClick={clickHandler}
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = Resume;
+              link.download = "Yassine - Front-end Developer - Resume";
+              link.click();
+              setIsClicked(!isClicked);
+            }}
             download="YASSINE-HAIMOUCH-resume"
           >
             Download Resume <FiDownload />
-          </a>
+          </div>
         </ul>
       )}
     </nav>

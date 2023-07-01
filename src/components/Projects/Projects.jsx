@@ -3,6 +3,10 @@ import Project from "./Project";
 import rickandmorty from "../../assets/project-1.png";
 import magictrick from "../../assets/project-2.png";
 import camerashop from "../../assets/project-3.png";
+import bookshelf from "../../assets/project-4.png";
+import reacthooks from "../../assets/project-5.png";
+import reactperformance from "../../assets/project-6.png";
+
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -26,6 +30,24 @@ const Projects = () => {
         viewport={{ once: true }}
         className=" grid grid-cols-1 gap-[5rem] md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 "
       >
+        <Project
+          img={bookshelf}
+          title="Bookshelf a full React Application Workshop"
+          github="https://github.com/yassinehaimouch/bookshelf"
+          desc={`Building a full React application from scratch. using (React JS, React Query, Bootstrap).`}
+        />
+        <Project
+          img={reacthooks}
+          title="Advanced React Hooks Workshop"
+          github="https://github.com/yassinehaimouch/react-hooks"
+          desc="It provides comprehensive training on React Hooks, covering topics like built-in Hooks, custom Hooks, and performance."
+        />
+        <Project
+          img={reactperformance}
+          title="React Performance Workshop"
+          github="https://github.com/yassinehaimouch/react-performance"
+          desc="It focuses on optimizing React application performance by covering, memoization, code splitting, and rendering. "
+        />
         <Project
           img={rickandmorty}
           title="Rick And Morty Characters With API"

@@ -27,7 +27,7 @@ const Project = (props) => {
             Github
             <AiFillGithub className=" w-[18px] h-[18px]" />
           </a>
-          <a
+          {props.demo && <a
             href={props.demo}
             rel="noreferrer"
             target="_blank"
@@ -35,7 +35,7 @@ const Project = (props) => {
           >
             Demo
             <AiFillEye className="  w-[18px] h-[18px]" />
-          </a>
+          </a>}
         </div>
       </div>
     </div>

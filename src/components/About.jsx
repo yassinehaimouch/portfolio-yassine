@@ -30,13 +30,13 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <h1 className=" text-[2.5rem] max-md:text-[2rem]">
-            I’m Developer, Designer, Magician and Content Creator.
+            I’m a software engineer mainly focused on React ecosystem.
           </h1>
           <p className=" text-[2rem] max-md:text-[1.5rem] text-[#838697]">
-            I'm developer armed with proficient knowledge of entire software
-            development life cycle and React expertise. I'm also kind of person
-            who love learn new technologies and apply them in real world
-            projects.
+            I have multiple years of experience in both UI/UX and Frontend
+            Development. Over the past 3 years, I've strengthened fundamentals
+            in web engineering that I'm eager to deploy on challenging projects
+            to expand my current skill set and tech stack.
           </p>
         </motion.div>
       </div>
