@@ -1,5 +1,6 @@
 import React from "react";
-import hero from "../assets/hero.png";
+// import hero from "../assets/hero.png";
+import hero from "../assets/hero2.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
@@ -49,7 +50,7 @@ const Hero = () => {
       <motion.img
         src={hero}
         alt="Hero"
-        className=" w-[500px]"
+        className=" w-[500px] drop-shadow-xl"
         initial={{ x: 0, opacity: 0 }}
         whileInView={{ y: [250, 0], opacity: 1 }}
         transition={{ duration: 1.5 }}

@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      dropShadow: {
+        'xl': '0 0 20px rgba(53,27,87, 2)',
       }
     },
     screens: {
