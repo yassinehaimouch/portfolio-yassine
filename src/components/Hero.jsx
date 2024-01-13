@@ -1,6 +1,6 @@
 import React from "react";
 // import hero from "../assets/hero.png";
-import hero from "../assets/hero2.png";
+import hero from "../assets/hero1.png";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
